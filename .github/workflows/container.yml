@@ -6,7 +6,7 @@ on:
     paths: -'mfp/packages/container/**'
 
 defaults:
-  rujn:
+  run:
     working-directory: mfp/packages/container
 
 jobs:
