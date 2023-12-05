@@ -1,11 +1,16 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import MarketingApp from './components/MarketingApp';
+import Header from './components/Header';
 
 export default () => {
     return (
         <React.Fragment>
-            <h1> Im in the container </h1>
-            <MarketingApp />
+            <BrowserRouter>
+                <Header />
+                <br />
+                <MarketingApp />
+            </BrowserRouter>
         </React.Fragment>
     )
 };
