@@ -21,7 +21,7 @@ jobs:
       - run: npm run build
 
       - name: Deploy to S3
-        uses: 066811383770/action-aws-cli@v1.1
+        uses: theodorsoftware/action-aws-cli@v1.1
         with:
           args: s3 sync dist s3://${{ secrets.AWS_S3_BUCKET_NAME }}/container/latest
         env:
