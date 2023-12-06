@@ -5,11 +5,11 @@ on:
     branches:
       - master
     paths:
-      - "mfp/packages/container/**"
+      - "microfrontend/mfp/packages/container/**"
 
 defaults:
   run:
-    working-directory: mfp/packages/container
+    working-directory: microfrontend/mfp/packages/container
 
 jobs:
   build:
