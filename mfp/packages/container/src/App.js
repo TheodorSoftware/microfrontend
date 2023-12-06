@@ -8,10 +8,6 @@ export default () => {
         <React.Fragment>
             <BrowserRouter>
                 <Header />
-                <div>
-                    Does this work lolz
-
-                </div>
                 <MarketingApp />
             </BrowserRouter>
         </React.Fragment>
