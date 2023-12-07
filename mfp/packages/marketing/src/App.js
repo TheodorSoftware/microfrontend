@@ -5,10 +5,14 @@ import { StylesProvider } from '@material-ui/core/styles';
 import Landing from './components/Landing';
 import Pricing from './components/Pricing';
 
+const generateClassName = createGenerateClassName({
+    productionPrefix: 'marketing'
+})
+
 export default () => {
     return (
         <div className="marketingApp">
-            <StylesProvider>
+            <StylesProvider generateClassName={generateClassName}>
                 <BrowserRouter>
                     <Switch>
                         <Route exact path="/pricing" component={Pricing} />
