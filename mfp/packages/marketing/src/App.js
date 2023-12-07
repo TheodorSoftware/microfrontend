@@ -17,6 +17,7 @@ export default ({ history }) => {
                     <Switch>
                         <Route exact path="/pricing" component={Pricing} />
                         <Route path="/" component={Landing} />
+                        <React.Fragment></React.Fragment>
                     </Switch>
                 </Router>
             </StylesProvider>
