@@ -5,13 +5,13 @@ import Header from './components/Header';
 import { StylesProvider, createGenerateClassName } from '@material-ui/core/styles';
 
 
-// const generateClassName = createGenerateClassName({
-//     productionPrefix: 'container'
-// })
+const generateClassName = createGenerateClassName({
+    productionPrefix: 'container'
+})
 
 export default () => {
     return (
-        <StylesProvider>
+        <StylesProvider generateClassName={generateClassName}>
             <React.Fragment>
                 <BrowserRouter>
                     <Header />
