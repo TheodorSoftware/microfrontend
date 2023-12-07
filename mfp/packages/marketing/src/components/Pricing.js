@@ -248,6 +248,7 @@ export default function Pricing() {
           <Copyright />
         </Box>
       </Container>
+      <React.Fragment></React.Fragment>
       {/* End footer */}
     </React.Fragment>
   );
